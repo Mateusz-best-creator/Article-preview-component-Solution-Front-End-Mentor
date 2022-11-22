@@ -1,0 +1,243 @@
+/*
+- Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%)
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.main-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 400px;
+    max-height: 600px;
+}
+
+.right-content-element {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.image-container {
+    width: 100%;
+    height: 40%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.content-container {
+    padding: 2rem 2rem 0 2rem;
+    height: 60%;
+    background-color: white;
+    height: 80%;
+}
+
+h1 {
+    color: hsl(214, 17%, 51%);
+}
+
+p {
+    margin-top: 1.5rem;
+    margin-bottom: -4rem;
+    color: hsl(217, 19%, 35%);
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+.person-container {
+    height: 20%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.selfie-photo{
+    width: 4rem;
+    height: 4rem;
+}
+
+.selfie-photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.describe-selfie {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: -2rem;
+    position: relative;
+}
+
+.name-surname {
+    font-weight: 700;
+}
+
+.date {
+    color: hsl(212, 23%, 69%);
+    font-weight: 700;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    height: 60%;
+    width: 11%;
+    background-color: hsl(210, 46%, 95%);
+    z-index: 10;
+    cursor: pointer;
+    margin-right: -1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.hidden-icons-container{
+   background-color: hsl(217, 19%, 35%);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 1.2rem;
+   padding-left: 2rem;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
+
+.hidden-icons-container .icons-element {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.icons-element img {
+    width: 1.7rem;
+}
+
+.hidden-icons-container h3 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.color {
+    color: transparent;
+}
+
+.attribution { 
+    text-align: center; 
+    font-size: 0.8rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width: 800px){
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 900px;
+        height: 400px;
+        max-height: 700px;
+    }
+
+    .image-container {
+        height: 100%;
+        width: 40%;
+    }
+
+    .left-content-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .content-container {
+        height: 80%;
+        width: 100%;
+    }
+
+    .content-container h2 {
+        margin-top: 2rem;
+    }
+
+    .content-container p {
+        margin-top: 2rem;
+    }
+
+    .person-container{
+        width: 100%;
+        height: 20%;
+    }
+
+    .describe-selfie {
+        margin-left: -8rem;
+    }
+
+    button {
+        width: 10%;
+        height: 70%;
+    }
+
+    .hidden-icons-container {
+        bottom: 5rem;
+        width: 20rem;
+        position: absolute;
+        right: -3rem;
+        border-radius: 10px;
+    }
+
+    .color {
+        color: hsl(217, 19%, 35%);
+    }
+
+}
